@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda Seu Celular</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="inicio">
+            <h3>Cadastre seu celular para vender o mais rápido possível</h3>
+        </div>
+        <div class="form-container">
+            <p>Formulários</p>
+        </div>
+        <div class="formulario">
+            <h1>Venda Fácil Seu Celular</h1>
+            <p>Descreva as características e marque os opcionais que ele possui</p>
+            <div class="box-input">
+                <form>
+                    <label for="tittle">Título do anúncio <span class="block">*</span></label>
+                    <input type="text" name="tittle" id="tittle" class="block"
+                        placeholder="Insira um título para anunciar seu celular" required>
+                    <label for="price">Preço<span class="block">*</span></label>
+                    <input type="number" name="price" placeholder="Defina o preço para venda" required>
+                    <label for="description">Descrição<span class="block">*</span></label>
+                    <textarea name="description"
+                        placeholder="Insira os detalhes do celular aqui; por exemplo se sua tela esta trincada"
+                        required></textarea>
+                    <label for="brand">Marca<span class="block">*</span></label>
+                    <input type="text" name="brand" placeholder="Digite a marca do celular" required>
+                    <label for="Model">Modelo<span class="block">*</span></label>
+                    <input type="text" name="Model" placeholder="Insira o modelo do celular" required>
+                    <label for="usage-time">Tempo de uso<span class="block">*</span></label>
+                    <input type="text" name="usage-time" placeholder="Insira o tempo que você já usou esse celular">
+                    <label for="date">Data de compra<span class="block">*</span></label>
+                    <input type="date" name="date" required>
+                    <div class="radio">
+                        <label for="system">Sistema operacional<span class="block">*</span></label>
+                        <input type="radio" name="system" value="ios">
+                        <label for="ios">IOS</label>
+                        <input type="radio" name="system" value="android">
+                        <label for="android">Android</label>
+                    </div>
+                    <div class="opcionais">
+                        <label for="optional">Opcionais</label>
+                        <input type="checkbox" name="optional" value="capa">
+                        <label for="capa">Capinha de Proteção</label>
+                        <input type="checkbox" name="optional" value="carregador">
+                        <label for="carregador">Carregador</label>
+                        <input type="checkbox" name="optional" value="fone">
+                        <label for="fone">Fones de Ouvido</label>
+                        <input type="checkbox" name="optional" value="pelicula">
+                        <label for="pelicula">Película para Proteção de Tela</label>
+                        <input type="checkbox" name="optional" value="pb">
+                        <label for="pb">Power Bank</label>
+                        <input type="checkbox" name="optional" value="ps">
+                        <label for="ps">Pop Socket</label>
+                    </div>
+                    <label for="image">Foto do Celular<span class="block">*</span></label>
+                    <input type="file" name="image" required>
+                    <input type="submit" value="Cadastrar">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
