@@ -21,48 +21,62 @@
             <p>Descreva as características e marque os opcionais que ele possui</p>
             <div class="box-input">
                 <form>
-                    <label for="tittle">Título do anúncio <span class="block">*</span></label>
+                    <label for="tittle">Título do anúncio <span class="required-field">*</span></label>
                     <input type="text" name="tittle" id="tittle" class="block"
                         placeholder="Insira um título para anunciar seu celular" required>
-                    <label for="price">Preço<span class="block">*</span></label>
+                    <label for="price">Preço<span class="required-field">*</span></label>
                     <input type="number" name="price" placeholder="Defina o preço para venda" required>
-                    <label for="description">Descrição<span class="block">*</span></label>
+                    <label for="description">Descrição<span class="required-field">*</span></label>
                     <textarea name="description"
-                        placeholder="Insira os detalhes do celular aqui; por exemplo se sua tela esta trincada"
-                        required></textarea>
-                    <label for="brand">Marca<span class="block">*</span></label>
+                        placeholder="Insira os detalhes do celular aqui, por exemplo: se sua tela esta trincada"
+                        required class="block"></textarea>
+                    <label for="brand">Marca<span class="required-field">*</span></label>
                     <input type="text" name="brand" placeholder="Digite a marca do celular" required>
-                    <label for="Model">Modelo<span class="block">*</span></label>
+                    <label for="Model">Modelo<span class="required-field">*</span></label>
                     <input type="text" name="Model" placeholder="Insira o modelo do celular" required>
-                    <label for="usage-time">Tempo de uso<span class="block">*</span></label>
+                    <label for="usage-time">Tempo de uso<span class="required-field">*</span></label>
                     <input type="text" name="usage-time" placeholder="Insira o tempo que você já usou esse celular">
-                    <label for="date">Data de compra<span class="block">*</span></label>
+                    <label for="date">Data de compra<span class="required-field">*</span></label>
                     <input type="date" name="date" required>
                     <div class="radio">
-                        <label for="system">Sistema operacional<span class="block">*</span></label>
-                        <input type="radio" name="system" value="ios">
+                        <p>Sistema operacional<span class="required-field">*</span></p>
+                        <input type="radio" name="system" id="ios">
                         <label for="ios">IOS</label>
-                        <input type="radio" name="system" value="android">
+                        <input type="radio" name="system" id="android">
                         <label for="android">Android</label>
                     </div>
                     <div class="opcionais">
-                        <label for="optional">Opcionais</label>
-                        <input type="checkbox" name="optional" value="capa">
-                        <label for="capa">Capinha de Proteção</label>
-                        <input type="checkbox" name="optional" value="carregador">
-                        <label for="carregador">Carregador</label>
-                        <input type="checkbox" name="optional" value="fone">
-                        <label for="fone">Fones de Ouvido</label>
-                        <input type="checkbox" name="optional" value="pelicula">
-                        <label for="pelicula">Película para Proteção de Tela</label>
-                        <input type="checkbox" name="optional" value="pb">
-                        <label for="pb">Power Bank</label>
-                        <input type="checkbox" name="optional" value="ps">
-                        <label for="ps">Pop Socket</label>
+                        <p>Opcionais</p>
+                        <ul class="lista-opcionais">
+                            <li>
+                                <input type="checkbox" name="optional[]" value="capa">
+                                <label for="capa">Capinha de Proteção</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional[]" value="carregador">
+                                <label for="carregador">Carregador</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional[]" value="fone">
+                                <label for="fone">Fones de Ouvido</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional[]" value="pelicula">
+                                <label for="pelicula">Película para Proteção de Tela</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional[]" value="pb">
+                                <label for="pb">Power Bank</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="optional[]" value="ps">
+                                <label for="ps">Pop Socket</label>
+                            </li>
+                        </ul>
                     </div>
-                    <label for="image">Foto do Celular<span class="block">*</span></label>
-                    <input type="file" name="image" required>
-                    <input type="submit" value="Cadastrar">
+                    <p>Foto do Celular<span class="required-field">*</span></p>
+                    <input type="file" name="image" required multiple accept="image/png, image/jpg" id="image">
+                    <input type="submit" value="Cadastrar" class="btn-submit">
                 </form>
             </div>
         </div>
